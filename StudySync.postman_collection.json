@@ -1,0 +1,1040 @@
+{
+	"info": {
+		"_postman_id": "19a1c9eb-c233-492b-ad21-e536e35fa79e",
+		"name": "StudySync",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32649322"
+	},
+	"item": [
+		{
+			"name": "Account",
+			"item": [
+				{
+					"name": "CreateAccount",
+					"item": [
+						{
+							"name": "CreateAccountUniver",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6ImFkbWluIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzEyNTA5NTg4LCJleHAiOjE3MTI3Njg3ODh9.vitybh4z6y0NeScja90G0Qim05xt8E5lD3WJUlfmzXE",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"userName\": \"truongdaotaoquocte\",\n    \"password\": \"123456\",\n    \"univerCode\": \"DTQT\",\n    \"univerName\": \"Trường Đào Tạo Quốc Tế\",\n    \"univerPhone\": \"0796503172\",\n    \"univerEmail\": \"duongnguyencongluan@gmail.com\",\n    \"univerAddress\": \"254 Nguyễn Văn Linh, Phường Thạc Gián, Quận Thanh Khê, Thành Phố Đà Nẵng\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:2109/account/univer",
+									"host": [
+										"localhost"
+									],
+									"port": "2109",
+									"path": [
+										"account",
+										"univer"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "CreateAccountFaculty",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6ImFkbWluIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzEyNTA5NTg4LCJleHAiOjE3MTI3Njg3ODh9.vitybh4z6y0NeScja90G0Qim05xt8E5lD3WJUlfmzXE",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"userName\": \"congnghethongtin\",\n    \"password\": \"123456\",\n    \"facultyCode\": \"CMU\",\n    \"facultyName\": \"Công nghệ thông tin chuẩn CMU\",\n    \"facultyPhone\": \"0869132529\",\n    \"facultyEmail\": \"congnghethongtin@gmail.com\",\n    \"facultyAddress\": \"Quang Trung, Đà Nẵng\",\n    \"univerCode\": \"DTQT\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:2109/account/faculty",
+									"host": [
+										"localhost"
+									],
+									"port": "2109",
+									"path": [
+										"account",
+										"faculty"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "CreateAccountStudent",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6ImFkbWluIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzExOTc1Mzc2LCJleHAiOjE3MTIyMzQ1NzZ9.-dmY1wE73TH0GGqD6R_gDvCOCplyhFuo9g6RWV7DmxI",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"userName\": \"nguyentanhthang3\",\n    \"password\": \"123456\",\n    \"studentClass\": \"K26 CMU-TPM04\",\n    \"studentCode\": \"1234567890\",\n    \"studentFullname\": \"Nguyễn Trần Anh Thắng\",\n    \"studentSex\": true,\n    \"studentBirthday\": \"2002-09-21\",\n    \"studentEmail\": \"nguyentanhthang@gmail.com\",\n    \"studentAddress\": \"68 Thanh Vinh 2, Phường Hoà Khánh Bắc, Quận Liên Chiểu, Thành Phố Đà Nẵng\",\n    \"studentPhone\": \"0869132529\",\n    \"facultyCode\": \"CMU\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:2109/account/student",
+									"host": [
+										"localhost"
+									],
+									"port": "2109",
+									"path": [
+										"account",
+										"student"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "CreateAccountMentor",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6ImFkbWluIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzEyNTA5NTg4LCJleHAiOjE3MTI3Njg3ODh9.vitybh4z6y0NeScja90G0Qim05xt8E5lD3WJUlfmzXE",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"userName\": \"tranthithuytrinh\",\n    \"password\": \"123456\",\n    \"mentorCode\": \"869132529\",\n    \"mentorFullname\": \"Trần Thị Thuý Trinh\",\n    \"mentorSex\": \"false\",\n    \"mentorBirthday\": \"1999-09-21\",\n    \"mentorPhone\": \"0869132529\",\n    \"mentorEmail\": \"thuytrinh@gmail.com\",\n    \"mentorDegree\": \"Tiến Sĩ\",\n    \"mentorScientificName\": \"Dr. Tran Thi Thuy Trinh\",\n    \"mentorAddress\": \"254 Nguyễn Văn Linh\",\n    \"facultyCode\": \"CMU\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:2109/account/mentor",
+									"host": [
+										"localhost"
+									],
+									"port": "2109",
+									"path": [
+										"account",
+										"mentor"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "getAccount",
+					"item": [
+						{
+							"name": "GetAccountUniver",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6ImFkbWluIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzEyNjYzMTI1LCJleHAiOjE3MTI5MjIzMjV9.T41jb7XYnjlv0V4vnCQ6-8mJ_WlHhGyyTmxK63xt9cU",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:2109/account/univer",
+									"host": [
+										"localhost"
+									],
+									"port": "2109",
+									"path": [
+										"account",
+										"univer"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getAllAccount",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6ImFkbWluIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzEyNjYzMTI1LCJleHAiOjE3MTI5MjIzMjV9.T41jb7XYnjlv0V4vnCQ6-8mJ_WlHhGyyTmxK63xt9cU",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:2109/account/all",
+									"host": [
+										"localhost"
+									],
+									"port": "2109",
+									"path": [
+										"account",
+										"all"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "DeleteAccount",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:2109/account/7d495dfa-3e8d-433c-b193-9c47d7c9b63b",
+							"host": [
+								"localhost"
+							],
+							"port": "2109",
+							"path": [
+								"account",
+								"7d495dfa-3e8d-433c-b193-9c47d7c9b63b"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EditAccount",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"userName\": \"congnghethongnhau\",\n    \"password\": \"1234567\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:2109/account/d89dcc64-eaa4-4224-9c76-5f64882907a3",
+							"host": [
+								"localhost"
+							],
+							"port": "2109",
+							"path": [
+								"account",
+								"d89dcc64-eaa4-4224-9c76-5f64882907a3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "auth",
+			"item": [
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"userName\":\"nguyentanhthang\",\n    \"password\": \"123456\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:2109/auth/login",
+							"host": [
+								"localhost"
+							],
+							"port": "2109",
+							"path": [
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Info",
+			"item": [
+				{
+					"name": "getInfo",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6InRydW9uZ2Rhb3Rhb3F1b2N0ZSIsInJvbGUiOiJ1bml2ZXIiLCJpYXQiOjE3MTMxMDAxNTAsImV4cCI6MTcxMzM1OTM1MH0.lnx6uq116k9rqJiMpv15Gslk8Jr0fc8UjyUehZUS6AQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:2109/info",
+							"host": [
+								"localhost"
+							],
+							"port": "2109",
+							"path": [
+								"info"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getRole",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6Im5ndXllbnRhbmh0aGFuZyIsInJvbGUiOiJzdHVkZW50IiwiaWF0IjoxNzEyMzA5OTUxLCJleHAiOjE3MTI1NjkxNTF9.UkQoitEfRLH_pCox8uI5YXJVAwOXj3pedmY4FDDsipA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:2109/info/role",
+							"host": [
+								"localhost"
+							],
+							"port": "2109",
+							"path": [
+								"info",
+								"role"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAvatar",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6Im5ndXllbnRhbmh0aGFuZyIsInJvbGUiOiJzdHVkZW50IiwiaWF0IjoxNzEyNTExOTU0LCJleHAiOjE3MTI3NzExNTR9.3E8nnr9y7BPlunYFJ4L0jqNTLZ6Lj6vgjMgUbSfTu0Q",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:2109/info/avatar/17c85fe2-e723-4dda-8c08-9011dac74a93_mentor",
+							"host": [
+								"localhost"
+							],
+							"port": "2109",
+							"path": [
+								"info",
+								"avatar",
+								"17c85fe2-e723-4dda-8c08-9011dac74a93_mentor"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getNameMentor",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:2109/info/nameMentor/CMU",
+							"host": [
+								"localhost"
+							],
+							"port": "2109",
+							"path": [
+								"info",
+								"nameMentor",
+								"CMU"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Student",
+			"item": [
+				{
+					"name": "getStudent",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6Im5ndXllbnRhbmh0aGFuZyIsInJvbGUiOiJzdHVkZW50IiwiaWF0IjoxNzEzODY5NjcyLCJleHAiOjE3MTQxMjg4NzJ9.djZ0CYqj-LKkRIL75CiZC_srdGs0uAkBiyPEBFhYjnI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:2109/student/26211329003",
+							"host": [
+								"localhost"
+							],
+							"port": "2109",
+							"path": [
+								"student",
+								"26211329003"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getTopicApprovedForStudent",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6Im5ndXllbnh1YW52YW5nIiwicm9sZSI6InN0dWRlbnQiLCJpYXQiOjE3MTQxNjI3NjgsImV4cCI6MTcxNDQyMTk2OH0.U86Se_kMVCNBh8uB2au16gfnJPi9ZS3Z0hGDMv3oJEo",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:2109/student/TopicApprovedForStudent",
+							"host": [
+								"localhost"
+							],
+							"port": "2109",
+							"path": [
+								"student",
+								"TopicApprovedForStudent"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Mentor",
+			"item": [
+				{
+					"name": "getMentor",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6InRyYW50aGl0aHV5dHJpbmgiLCJyb2xlIjoibWVudG9yIiwiaWF0IjoxNzEzNDQ2NTIwLCJleHAiOjE3MTM3MDU3MjB9.4K_f30-3U_FBnlnU2qpJOnhveUURNWpFjUctf-trtPs",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:2109/mentor/getmentor/123456789",
+							"host": [
+								"localhost"
+							],
+							"port": "2109",
+							"path": [
+								"mentor",
+								"getmentor",
+								"123456789"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getUnconfirmedTopicsForMentor",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6InRyYW50aGl0aHV5dHJpbmgiLCJyb2xlIjoibWVudG9yIiwiaWF0IjoxNzEzNzg3NDQ2LCJleHAiOjE3MTQwNDY2NDZ9.KcQNkMw_kLIp3-FoHd66KT7xMCQomDDcCj-4qOU-YO0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:2109/mentor/UnconfirmedTopicsForMentor",
+							"host": [
+								"localhost"
+							],
+							"port": "2109",
+							"path": [
+								"mentor",
+								"UnconfirmedTopicsForMentor"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "approveTopicForMentor",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6InRyYW50aGl0aHV5dHJpbmgiLCJyb2xlIjoibWVudG9yIiwiaWF0IjoxNzE0MDUwOTgyLCJleHAiOjE3MTQzMTAxODJ9.fNeXKM11P4Cm_Nvgt-jhUDHhdeG30MDxY9lMvJxeJaA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "localhost:2109/mentor/approveTopicForMentor/ISCMU02",
+							"host": [
+								"localhost"
+							],
+							"port": "2109",
+							"path": [
+								"mentor",
+								"approveTopicForMentor",
+								"ISCMU02"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Topic",
+			"item": [
+				{
+					"name": "CreateTopic",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6Im5ndXllbnRhbmh0aGFuZyIsInJvbGUiOiJzdHVkZW50IiwiaWF0IjoxNzE0MDcxODQyLCJleHAiOjE3MTQzMzEwNDJ9.chVCIkrRodzSZp54Xiv608j5cYDGOPQJvfj483DO8SI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"topicName\": \"projectTest\",\n    \"topicGoalSubject\": \"ákjdhakhfkas\",\n    \"topicExpectedResearch\": \"alskhdfjkadsjf\",\n    \"topicDateStart\": \"2024-04-01\",\n    \"topicDateEnd\": \"2024-10-01\",\n    \"facultyCode\": \"CMU\",\n    \"mentorCode\": \"0123456789\",\n    \"leader\": \"26211329003\",\n    \"listMember\": [\n        \"26211329003\",\n        \"26211241611\"\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:2109/topic",
+							"host": [
+								"localhost"
+							],
+							"port": "2109",
+							"path": [
+								"topic"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getTopic",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6Im5ndXllbnRhbmh0aGFuZyIsInJvbGUiOiJzdHVkZW50IiwiaWF0IjoxNzEzODY5NjcyLCJleHAiOjE3MTQxMjg4NzJ9.djZ0CYqj-LKkRIL75CiZC_srdGs0uAkBiyPEBFhYjnI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:2109/topic",
+							"host": [
+								"localhost"
+							],
+							"port": "2109",
+							"path": [
+								"topic"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "UnitVietNam",
+			"item": [
+				{
+					"name": "getprovinces",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:2109/unitvietnam/provinces",
+							"host": [
+								"localhost"
+							],
+							"port": "2109",
+							"path": [
+								"unitvietnam",
+								"provinces"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getDistricts",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:2109/unitvietnam/districts/48",
+							"host": [
+								"localhost"
+							],
+							"port": "2109",
+							"path": [
+								"unitvietnam",
+								"districts",
+								"48"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getWards",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:2109/unitvietnam/wards/490",
+							"host": [
+								"localhost"
+							],
+							"port": "2109",
+							"path": [
+								"unitvietnam",
+								"wards",
+								"490"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "getCode",
+			"item": [
+				{
+					"name": "getAllUniverCode",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6ImFkbWluIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzEyNjY5ODEyLCJleHAiOjE3MTI5MjkwMTJ9.dbrBGlmRhz98aZNsIhWn0x5ovtRfyfJP_2VhrydA_Hk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:2109/univer/getAllUniverCode",
+							"host": [
+								"localhost"
+							],
+							"port": "2109",
+							"path": [
+								"univer",
+								"getAllUniverCode"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAllFacultyForUniver",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:2109/faculty/IS",
+							"host": [
+								"localhost"
+							],
+							"port": "2109",
+							"path": [
+								"faculty",
+								"IS"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Univer",
+			"item": [
+				{
+					"name": "getUniverDashBoard",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:2109/univer/dashboardForUniver/IS",
+							"host": [
+								"localhost"
+							],
+							"port": "2109",
+							"path": [
+								"univer",
+								"dashboardForUniver",
+								"IS"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Faculty",
+			"item": [
+				{
+					"name": "UnconfirmedTopicsForFaculty",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6Imt5dGh1YXRwaGFubWVtIiwicm9sZSI6ImZhY3VsdHkiLCJpYXQiOjE3MTM4NjM5NjQsImV4cCI6MTcxNDEyMzE2NH0.YdJkNswdmOKrTsvvIX8Rk0tlbNCLNLlo3qcTy3qAQZ8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:2109/faculty/UnconfirmedTopicsForFaculty",
+							"host": [
+								"localhost"
+							],
+							"port": "2109",
+							"path": [
+								"faculty",
+								"UnconfirmedTopicsForFaculty"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "approveTopicForFaculty",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6Imt5dGh1YXRwaGFubWVtIiwicm9sZSI6ImZhY3VsdHkiLCJpYXQiOjE3MTQxNjA1OTAsImV4cCI6MTcxNDQxOTc5MH0.yoIQMookk1bTtn0rhLSY6Y1ST50QzeHv-B7Nq96gqmg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "localhost:2109/faculty/approveTopicForFaculty/ISCMU02",
+							"host": [
+								"localhost"
+							],
+							"port": "2109",
+							"path": [
+								"faculty",
+								"approveTopicForFaculty",
+								"ISCMU02"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Propose Idea",
+			"item": [
+				{
+					"name": "create Propose Idea",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6InRydW9uZ2Rpbmh1eSIsInJvbGUiOiJtZW50b3IiLCJpYXQiOjE3MTQwNzk1NjMsImV4cCI6MTcxNDMzODc2M30.3beE7DvFRnKjrR0c5CLleQBTkLbpqXYlKuAGUbVXpMw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"ideaName\":\"Exam Master6\",\n    \"ideaDescription\":\"đây là bài kiểm tra master cua huy\",\n    \"ideaGoalSubject\":\"hú hú hú hú hú húcua huy\",\n    \"ideaExpectedResearch\":\"hí hí hí hí hí hícua huy\",\n    \"otherNotes\":\"Anh Thắng Dzvclcua huy\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:2109/proposeIdea/createProposeIdea",
+							"host": [
+								"localhost"
+							],
+							"port": "2109",
+							"path": [
+								"proposeIdea",
+								"createProposeIdea"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getListProposeIdea",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6Im5ndXllbnRhbmh0aGFuZyIsInJvbGUiOiJzdHVkZW50IiwiaWF0IjoxNzE0MDcxODQyLCJleHAiOjE3MTQzMzEwNDJ9.chVCIkrRodzSZp54Xiv608j5cYDGOPQJvfj483DO8SI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:2109/proposeIdea/ListProposeIdea",
+							"host": [
+								"localhost"
+							],
+							"port": "2109",
+							"path": [
+								"proposeIdea",
+								"ListProposeIdea"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Propose Idea Detail",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:2109/proposeIdea/proposeideadetail/IDEACMU03",
+							"host": [
+								"localhost"
+							],
+							"port": "2109",
+							"path": [
+								"proposeIdea",
+								"proposeideadetail",
+								"IDEACMU03"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Propose Idea",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:2109/proposeIdea/deleteProposeIdea/IDEACMU01",
+							"host": [
+								"localhost"
+							],
+							"port": "2109",
+							"path": [
+								"proposeIdea",
+								"deleteProposeIdea",
+								"IDEACMU01"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getMyProposeIdea",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6InRyYW50aGl0aHV5dHJpbmgiLCJyb2xlIjoibWVudG9yIiwiaWF0IjoxNzE0MDc4NDYwLCJleHAiOjE3MTQzMzc2NjB9.yE51MU242VLHQ4qKvwtMFRKwoLq9XPVptZ_MXl--bBM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:2109/proposeIdea/myproposeidea",
+							"host": [
+								"localhost"
+							],
+							"port": "2109",
+							"path": [
+								"proposeIdea",
+								"myproposeidea"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateProposeIdea",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6InRydW9uZ2Rpbmh1eSIsInJvbGUiOiJtZW50b3IiLCJpYXQiOjE3MTQwNzk1NjMsImV4cCI6MTcxNDMzODc2M30.3beE7DvFRnKjrR0c5CLleQBTkLbpqXYlKuAGUbVXpMw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"ideaName\":\"Exam Master2\",\n    \"ideaDescription\":\"đây là bài kiểm tra master vui\",\n    \"ideaGoalSubject\":\"hú hú hú hú hú hú hí\",\n    \"ideaExpectedResearch\":\"hí hí hí hí hí hí hú\",\n    \"otherNotes\":\"Anh Thắng Dzvcluon\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:2109/proposeIdea/updateProposalIdea/IDEACMU02",
+							"host": [
+								"localhost"
+							],
+							"port": "2109",
+							"path": [
+								"proposeIdea",
+								"updateProposalIdea",
+								"IDEACMU02"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

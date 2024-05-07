@@ -1,1 +1,1 @@
-# StudySync---Scientific-research-management
+# Study-Sync

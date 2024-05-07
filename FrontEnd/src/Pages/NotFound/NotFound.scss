@@ -1,0 +1,10 @@
+.error-cover{
+    min-width: 500px;
+    margin-bottom: 40px;
+}
+
+@media screen and (max-width: 600px) {
+    .error-cover{
+        min-width: 300px;
+    }
+}

@@ -1,0 +1,44 @@
+.infoScroll::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+  // -webkit-border: 1px solid #999
+  background-color: #F6E8E8;
+  border-radius: 10px;
+}
+
+.infoScroll::-webkit-scrollbar {
+  width: 10px;
+  background-color: #F6E8E8;
+}
+
+.infoScroll::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-image: -webkit-gradient(linear,
+      left bottom,
+      left top,
+      color-stop(0.44, #FFC5C5),
+      color-stop(0.72, #FFC5C5),
+      color-stop(0.86, #FFC5C5));
+}
+
+
+.overlay-container {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(60, 60, 60, 0.5);
+  /* Màu nền overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.progress {
+  z-index: 1;
+  /* Đảm bảo CircularProgress nằm trên overlay */
+}
